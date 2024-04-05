@@ -149,7 +149,7 @@
         BACKSLASH_POUND: BACKSLASH_POUND {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSLASH_POUND";
-            bindings = <&kp BACKSLASH>, <&kp HASH>;
+            bindings = <&kp BACKSLASH>, <&kp NON_US_HASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
