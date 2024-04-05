@@ -149,10 +149,11 @@
         BACKSLASH_POUND: BACKSLASH_POUND {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSLASH_POUND";
-            bindings = <&kp NON_US_BACKSLASH>, <&kp HASH>;
+            bindings = <&kp BACKSLASH>, <&kp HASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
         AT_CARET: AT_CARET {
