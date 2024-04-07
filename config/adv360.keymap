@@ -297,11 +297,11 @@
 
         editor_shortcut {
             bindings = <
-&none  &none           &none       &none               &none                   &none                    &none                                                       &none  &none                   &none             &none               &none                      &none                       &none
-&none  &ALT_CMD_O_TOG  &CMD_T_TOG  &SHIFT_CMD_O_TOG    &none                   &none                    &trans                                                      &none  &none                   &CMD_K_CMD_D      &CMD_K_CTRL_CMD_D   &kp LA(LG(L))              &none                       &none
-&none  &CMD_K_TOG      &none       &none               &kp LA(LS(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &none              &none           &none      &none  &none  &none  &none                   &none             &none               &kp LA(LG(S))              &none                       &none
-&none  &CMD_Z_TOG      &CMD_X_TOG  &CMD_C_TOG          &CMD_V_TOG              &none                                                       &none      &none                &kp LA(LS(DOWN_ARROW))  &kp LS(LG(M))     &none               &none                      &none                       &none
-&none  &none           &none       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                              &kp LA(BACKSPACE)  &kp LA(DELETE)  &none      &none  &none  &none                          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &ALT_CMD_LEFT_BRACKET_TOG  &ALT_CMD_RIGHT_BRACKET_TOG  &none
+&none   &none           &none       &none               &none                   &none                    &none                                                          &none  &none                   &none             &none               &none                      &none                       &none
+&trans  &ALT_CMD_O_TOG  &CMD_T_TOG  &SHIFT_CMD_O_TOG    &none                   &none                    &trans                                                         &none  &none                   &CMD_K_CMD_D      &CMD_K_CTRL_CMD_D   &kp LA(LG(L))              &none                       &none
+&trans  &CMD_K_TOG      &none       &none               &kp LA(LS(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &none              &trans          &trans      &trans  &trans  &none  &none                   &none             &none               &kp LA(LG(S))              &none                       &none
+&trans  &CMD_Z_TOG      &CMD_X_TOG  &CMD_C_TOG          &CMD_V_TOG              &none                                                       &trans      &trans                 &kp LA(LS(DOWN_ARROW))  &kp LS(LG(M))     &none               &none                      &none                       &trans
+&trans  &none           &none       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                              &kp LA(BACKSPACE)  &kp LA(DELETE)  &trans      &trans  &none   &none                          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &ALT_CMD_LEFT_BRACKET_TOG  &ALT_CMD_RIGHT_BRACKET_TOG  &trans
             >;
         };
 
