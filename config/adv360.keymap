@@ -175,7 +175,6 @@
     };
 
     macros {
-
         CMD_X_TOG: cmd_x_tog {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -269,7 +268,7 @@
         default_layer {
             bindings = <
 &GRAVE_PIPE  &N1_PLUS       &N2_BRACKET  &N3_BRACES  &N4_PARENTH  &N5_AMP  &tog 1                                                   &mo 4            &N6_EQUAL  &N7_PARENTH  &N8_BRACE  &N9_BRACKET  &N0_Asterix  &BANG_PERCENT
-&kp TAB      &kp SEMICOLON  &kp COMMA    &kp PERIOD  &kp P        &kp Y    &none                                                    &kp PRINTSCREEN  &kp F      &kp G        &kp C      &kp R        &kp L        &BACKSLASH_POUND
+&kp TAB      &kp SEMICOLON  &kp COMMA    &kp PERIOD  &kp P        &kp Y    &tog 3                                                   &kp PRINTSCREEN  &kp F      &kp G        &kp C      &kp R        &kp L        &BACKSLASH_POUND
 &kp ESC      &kp A          &kp O        &kp E       &kp U        &kp I    &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp INSERT       &kp D      &kp H        &kp T      &kp N        &kp S        &kp MINUS
 &kp LSHFT    &kp SQT        &kp Q        &kp J       &kp K        &kp X                         &kp HOME      &kp PG_UP                              &kp B      &kp M        &kp W      &kp V        &kp Z        &kp RSHFT
 &mo 2        &DOLLAR_TILDE  &kp CAPS     &kp LEFT    &kp RIGHT             &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                   &kp UP       &kp DOWN   &kp SLASH    &AT_CARET    &mo 2
@@ -299,7 +298,7 @@
         editor_shortcut {
             bindings = <
 &none  &none           &none       &none               &none                   &none                    &none                                                       &none  &none                   &none             &none               &none                      &none                       &none
-&none  &ALT_CMD_O_TOG  &CMD_T_TOG  &SHIFT_CMD_O_TOG    &none                   &none                    &none                                                       &none  &none                   &CMD_K_CMD_D      &CMD_K_SHIFT_CMD_D  &kp LA(LG(L))              &none                       &none
+&none  &ALT_CMD_O_TOG  &CMD_T_TOG  &SHIFT_CMD_O_TOG    &none                   &none                    &trans                                                      &none  &none                   &CMD_K_CMD_D      &CMD_K_SHIFT_CMD_D  &kp LA(LG(L))              &none                       &none
 &none  &CMD_K_TOG      &none       &none               &kp LA(LS(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &none              &none           &none      &none  &none  &none  &none                   &none             &none               &kp LA(LG(S))              &none                       &none
 &none  &CMD_Z_TOG      &CMD_X_TOG  &CMD_C_TOG          &CMD_V_TOG              &none                                                       &none      &none                &kp LA(LS(DOWN_ARROW))  &kp LS(LG(M))     &none               &none                      &none                       &none
 &none  &none           &none       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                              &kp LA(BACKSPACE)  &kp LA(DELETE)  &none      &none  &none  &none                          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &ALT_CMD_LEFT_BRACKET_TOG  &ALT_CMD_RIGHT_BRACKET_TOG  &none
