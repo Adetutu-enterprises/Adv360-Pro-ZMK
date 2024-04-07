@@ -45,6 +45,48 @@
             label = "CMD_C_TOG";
         };
 
+        cmd_k_tog: cmd_k_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C) &to 3>;
+            label = "CMD_K_TOG";
+        };
+
+        alt_cmd_o_tog: alt_cmd_o_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(O)) &to 3>;
+            label = "ALT_CMD_O_TOG";
+        };
+
+        cmd_t_tog: cmd_t_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(T) &to 3>;
+            label = "CMD_T_TOG";
+        };
+
+        shift_cmd_o_tog: shift_cmd_o_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(O)) &to 3>;
+            label = "SHIFT_CMD_O_TOG";
+        };
+
+        alt_cmd_left_bracket_tog: alt_cmd_bracket_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LEFT_BRACKET)) &to 3>;
+            label = "ALT_CMD_BRACKET_TOG";
+        };
+
+        alt_cmd_right_bracket_tog: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(RIGHT_BRACKET)) &to 3>;
+            label = "NEW_MACRO";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -240,11 +282,11 @@
 
         editor_shortcut {
             bindings = <
-&none  &none       &none       &none       &none       &none  &none                                                       &none  &none  &none             &none               &none          &none  &none
-&none  &none       &none       &none       &none       &none  &none                                                       &none  &none  &none             &none               &kp LA(LG(L))  &none  &none
-&none  &none       &none       &none       &none       &none  &none              &none           &none      &none  &none  &none  &none  &none             &none               &kp LA(LG(S))  &none  &none
-&none  &cmd_z_tog  &cmd_x_tog  &cmd_c_tog  &cmd_v_tog  &none                                     &none      &none                &none  &none             &none               &none          &none  &none
-&none  &none       &none       &none       &none              &kp LA(BACKSPACE)  &kp LA(DELETE)  &none      &none  &none  &none         &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &none          &none  &none
+&none  &none           &none       &none               &none                   &none                    &none                                                       &none  &none                   &none             &none               &none                      &none                       &none
+&none  &alt_cmd_o_tog  &cmd_t_tog  &shift_cmd_o_tog    &none                   &none                    &none                                                       &none  &none                   &none             &none               &kp LA(LG(L))              &none                       &none
+&none  &cmd_k_tog      &none       &none               &kp LA(LS(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &none              &none           &none      &none  &none  &none  &none                   &none             &none               &kp LA(LG(S))              &none                       &none
+&none  &cmd_z_tog      &cmd_x_tog  &cmd_c_tog          &cmd_v_tog              &none                                                       &none      &none                &kp LA(LS(DOWN_ARROW))  &kp LS(LG(M))     &none               &none                      &none                       &none
+&none  &none           &none       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                              &kp LA(BACKSPACE)  &kp LA(DELETE)  &none      &none  &none  &none                          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &alt_cmd_left_bracket_tog  &alt_cmd_right_bracket_tog  &none
             >;
         };
 
