@@ -87,6 +87,22 @@
             label = "NEW_MACRO";
         };
 
+        cmd_k_cmd_d: cmd_k_cmd_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(K)>, <&macro_wait_time 50>, <&kp LG(D)>;
+
+            label = "CMD_K_CMD_D";
+        };
+
+        cmd_k_shift_cmd_d: cmd_k_shift_cmd_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(K)>, <&macro_wait_time 50>, <&kp LG(LS(D))>;
+
+            label = "CMD_K_SHIFT_CMD_D";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -283,7 +299,7 @@
         editor_shortcut {
             bindings = <
 &none  &none           &none       &none               &none                   &none                    &none                                                       &none  &none                   &none             &none               &none                      &none                       &none
-&none  &alt_cmd_o_tog  &cmd_t_tog  &shift_cmd_o_tog    &none                   &none                    &none                                                       &none  &none                   &none             &none               &kp LA(LG(L))              &none                       &none
+&none  &alt_cmd_o_tog  &cmd_t_tog  &shift_cmd_o_tog    &none                   &none                    &none                                                       &none  &none                   &cmd_k_cmd_d      &cmd_k_shift_cmd_d  &kp LA(LG(L))              &none                       &none
 &none  &cmd_k_tog      &none       &none               &kp LA(LS(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &none              &none           &none      &none  &none  &none  &none                   &none             &none               &kp LA(LG(S))              &none                       &none
 &none  &cmd_z_tog      &cmd_x_tog  &cmd_c_tog          &cmd_v_tog              &none                                                       &none      &none                &kp LA(LS(DOWN_ARROW))  &kp LS(LG(M))     &none               &none                      &none                       &none
 &none  &none           &none       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                              &kp LA(BACKSPACE)  &kp LA(DELETE)  &none      &none  &none  &none                          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &alt_cmd_left_bracket_tog  &alt_cmd_right_bracket_tog  &none
