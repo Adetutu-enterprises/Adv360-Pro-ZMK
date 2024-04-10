@@ -268,7 +268,7 @@
         default_layer {
             bindings = <
 &GRAVE_PIPE  &N1_PLUS       &N2_BRACKET  &N3_BRACES  &N4_PARENTH  &N5_AMP  &tog 2                                                   &mo 1            &N6_EQUAL  &N7_PARENTH  &N8_BRACE  &N9_BRACKET  &N0_Asterix  &BANG_PERCENT
-&kp TAB      &kp SEMICOLON  &kp COMMA    &kp PERIOD  &kp P        &kp Y    &tog 0                                                   &kp PRINTSCREEN  &kp F      &kp G        &kp C      &kp R        &kp L        &BACKSLASH_POUND
+&kp TAB      &kp SEMICOLON  &kp COMMA    &kp PERIOD  &kp P        &kp Y    &tog 4                                                   &kp PRINTSCREEN  &kp F      &kp G        &kp C      &kp R        &kp L        &BACKSLASH_POUND
 &kp ESC      &kp A          &kp O        &kp E       &kp U        &kp I    &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp INSERT       &kp D      &kp H        &kp T      &kp N        &kp S        &kp MINUS
 &kp LSHFT    &kp SQT        &kp Q        &kp J       &kp K        &kp X                         &kp HOME      &kp PG_UP                              &kp B      &kp M        &kp W      &kp V        &kp Z        &kp RSHFT
 &mo 3        &DOLLAR_TILDE  &kp CAPS     &kp LEFT    &kp RIGHT             &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                   &kp UP       &kp DOWN   &kp SLASH    &AT_CARET    &mo 3
